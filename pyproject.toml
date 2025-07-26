@@ -43,6 +43,7 @@ vllm = "vllm.entrypoints.cli.main:main"
 
 [project.entry-points."vllm.general_plugins"]
 lora_filesystem_resolver = "vllm.plugins.lora_resolvers.filesystem_resolver:register_filesystem_resolver"
+lora_s3_resolver = "vllm.plugins.lora_resolvers.s3_resolver:register_s3_resolver"
 
 [tool.setuptools_scm]
 # no extra settings needed, presence enables setuptools-scm
